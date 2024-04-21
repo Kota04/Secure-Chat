@@ -20,6 +20,18 @@ Secure Chat System is a Python-based chat application designed for secure commun
 - **Message Storage**: Clients can retrieve missed messages sent to them while they were offline.
 - **Colorful Interface**: Both the server and client interfaces include colorful banners and text styling.
 
+
+## Security Measures
+
+### End-to-End Encryption
+- **Encryption Algorithm**: AES (Advanced Encryption Standard) is utilized for encrypting messages exchanged between clients. Encryption and decryption are performed only at the server and receiver, ensuring end-to-end encryption.
+- **Confidentiality**: Messages are encrypted before transmission and decrypted upon reception, preventing unauthorized access to message content.
+
+### Password Storage
+- **Hashing Algorithm**: SHA-256 (Secure Hash Algorithm 256-bit) is employed to securely store user passwords in the database.
+- **Preventing Attacks**: Storing hashed passwords mitigates the risk of attacks, such as Man-in-the-Middle (MIM) attacks and unauthorized access to the database.
+
+
 ## Setup
 
 1. Clone this repository.
